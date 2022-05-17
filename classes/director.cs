@@ -20,7 +20,7 @@ namespace CSE210_Hilo.classes
 
         public void StartGame()
         {
-            while (isPlaying && score >= 0)
+            while (isPlaying && score > 0)
             {
                 GetInputs();
                 DoUpdates();
@@ -34,7 +34,7 @@ namespace CSE210_Hilo.classes
 
             }
             
-            else if (score >= 0)
+            else if (score <= 0)
             {
                 Console.Write("Your score has fallen to, or bel0w 0. Better luck next time!");
             }
