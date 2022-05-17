@@ -1,4 +1,5 @@
 ﻿using System;
+using CSE210_Hilo.classes;
 
 namespace CSE210_Hilo
 {
@@ -6,7 +7,9 @@ namespace CSE210_Hilo
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            director director = new director();
+            director.StartGame();
+
         }
     }
 }
