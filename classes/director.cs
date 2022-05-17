@@ -36,7 +36,7 @@ namespace CSE210_Hilo.classes
             
             else if (score < 0)
             {
-                Console.Write("Your score is 0. Better luck next time!");
+                Console.Write("Your score has fallen bel0w 0. Better luck next time!");
             }
         }
 
