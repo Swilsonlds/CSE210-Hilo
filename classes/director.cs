@@ -20,14 +20,24 @@ namespace CSE210_Hilo.classes
 
         public void StartGame()
         {
-            while (isPlaying)
+            while (isPlaying && score > 0)
             {
                 GetInputs();
                 DoUpdates();
                 DoOutputs();
 
             }
-            Console.Write($"Your final score is {score}, thanks for playing!");
+
+            if (!isPlaying)
+            {
+                Console.Write($"Your final score is {score}, thanks for playing!");
+
+            }
+            
+            else if (score < 0)
+            {
+                Console.Write("Your score is 0. Better luck next time!");
+            }
         }
 
         public void GetInputs()
